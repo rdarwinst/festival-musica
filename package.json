@@ -1,0 +1,32 @@
+{
+  "name": "festivalmusica",
+  "version": "1.0.0",
+  "description": "Proyecto web de Rock & EDM Festival",
+  "main": "index.js",
+  "scripts": {
+    "dev": "gulp dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rdarwinst/festival-musica.git"
+  },
+  "keywords": [
+    "Gulp",
+    "SASS",
+    "CSS",
+    "JavaScript",
+    "HTML"
+  ],
+  "author": "Darwin Ramirez - rdarwinst",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rdarwinst/festival-musica/issues"
+  },
+  "homepage": "https://github.com/rdarwinst/festival-musica#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-plumber": "^1.2.1",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.69.4"
+  }
+}
