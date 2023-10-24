@@ -1,2 +1,4 @@
 node_modules/
-src/scss/
+src/scss
+src/img
+gulpfile.js

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,6 +15,7 @@
     <link rel="preload" href="build/css/app.css" as="style">
     <link rel="stylesheet" href="build/css/app.css">
 </head>
+
 <body>
     <header class="header">
         <div class="contenedor contenido-header">
@@ -26,20 +28,37 @@
                 <a href="#">Boletería</a>
             </nav>
         </div>
-    </header>
+    </header><!-- .header -->
 
     <div class="video">
         <div class="overlay">
             <div class="contenedor contenido-video">
                 <h2>Rock & EDM Festival</h2>
                 <p>Bogotá, Colombia - Noviembre 2023</p>
-            </div>
-        </div>
+            </div><!-- .contenido-video -->
+        </div><!-- .overlay -->
         <video autoplay muted loop>
             <source src="video/concierto.mp4" type="video/mp4">
             <source src="video/concierto.ogg" type="video/ogg">
             <source src="video/concierto.webm" type="video/webm">
         </video>
-    </div>
+    </div><!-- .video -->
+
+    <section class="contenedor sobre-festival">
+        <div class="imagen">
+            <picture>
+                <source srcset="build/img/imagen_vocalista.webp" type="image/webp" loaging="lazy">
+                <img src="build/img/imagen_vocalista.jpg" alt="Imagen Festival" loading="lazy">
+            </picture>
+        </div>
+        <div class="contenido-festival">
+            <h2>Rock & EDM Festival</h2>
+            <p class="fecha">Noviembre 2023, Bogotá, Colombia.</p>
+            <p>Pariatur dolor commodo dolore proident adipisicing veniam minim officia enim veniam. Laborum magna Lorem
+                officia culpa fugiat occaecat quis fugiat. Eiusmod do et velit esse elit culpa. Minim dolore nisi esse
+                in cillum anim duis cupidatat incididunt consequat ea laboris eiusmod.</p>
+        </div>
+    </section>
 </body>
+
 </html>
