@@ -24,9 +24,9 @@
                 <h1>Rock & EDM Festival</h1>
             </a>
             <nav class="navegacion-principal">
-                <a href="#">Line Up</a>
-                <a href="#">Galería</a>
-                <a href="#">Boletería</a>
+                <a href="#lineup">Line Up</a>
+                <a href="#galeria">Galería</a>
+                <a href="#boleteria">Boletería</a>
             </nav>
         </div>
     </header><!-- .header -->
@@ -62,7 +62,7 @@
         </div><!-- .contenido-festival -->
     </section><!-- .sobre-festival -->
 
-    <main class="lineup">
+    <main class="lineup" id="lineup">
         <h3>Line Up</h3>
         <p class="dia">Viernes 17</p>
         <div class="escenarios-contenedor contenedor">
@@ -118,13 +118,54 @@
         </div><!-- .escenarios-contenedor -->
     </main>
 
-    <section class="galeria contenedor">
+    <section class="galeria contenedor" id="galeria">
         <h3>Galería</h3>
         <ul class="galeria-imagenes">
-            
+
         </ul>
     </section>
 
+    <section class="boletos bg-verde" id="boleteria">
+        <h3>Boletería</h3>
+        <div class="contenedor contenedor-boletos">
+            <div class="basico boleto">
+                <p>Boleta 1 Día</p>
+                <header class="boleto-header">
+                    <p>Incluye</p>
+                </header>
+                <div class="boleto-body">
+                    <ul>
+                        <li>Acceso a Ambos Escenarios</li>
+                        <li>Comida y Bebida</li>
+                    </ul>
+                </div><!-- boleto-body -->
+                <footer class="boleto-footer">
+                    <p>$260.000</p>
+                </footer>
+            </div><!-- .basico -->
+            <div class="premium boleto">
+                <p>Boleta 2 Días</p>
+                <header class="boleto-header">
+                    <p>Incluye</p>
+                </header>
+                <div class="boleto-body">
+                    <ul>
+                        <li>Acceso a Ambos Escenarios</li>
+                        <li>Comida y Bebida</li>
+                        <li>Meet & Greet con Artistas</li>
+                        <li>Poster del Evento</li>
+                    </ul>
+                </div><!-- boleto-body -->
+                <footer class="boleto-footer">
+                    <p>$510.000</p>
+                </footer>
+            </div>
+        </div><!-- .contenedor-boletos -->
+    </section>
+
+    <footer class="site-footer">
+        <p>Rock & EDM Festival - Todos los derechos reservados. &COPY;</p>
+    </footer>
     <script src="build/js/app.js"></script>
 </body>
 

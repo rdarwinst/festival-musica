@@ -1,9 +1,27 @@
 document.addEventListener('DOMContentLoaded', function () {
     iniciarApp();
-})
+});
 
 function iniciarApp() {
     crearGaleria();
+    scrollNav();
+}
+
+function scrollNav() {
+    const enlaces = document.querySelectorAll('.navegacion-principal a');
+
+    enlaces.forEach(enlace => {
+        enlace.addEventListener('click', function (e) {
+
+            e.preventDefault();
+
+            const seccionScroll = e.target.attributes.href.value;
+
+            const seccion = document.querySelector(seccionScroll);
+
+            seccion.scrollIntoView({ behavior: 'smooth' });
+        });
+    });
 }
 
 function crearGaleria() {
@@ -21,7 +39,7 @@ function crearGaleria() {
 
         imagen.onclick = function () {
             mostrarImagen(i);
-        }
+        };
 
         galeria.appendChild(imagen);
 
@@ -53,11 +71,11 @@ function mostrarImagen(id) {
     overlay.onclick = function () {
         overlay.remove();
         body.classList.remove('fijar-body');
-    }
+    };
     close.onclick = function () {
         overlay.remove();
         body.classList.remove('fijar-body');
-    }
+    };
 
     const body = document.querySelector('body');
     body.appendChild(overlay);
