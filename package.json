@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "css": "gulp css",
+    "js": "gulp js",
     "dev": "gulp dev",
+    "imagenes": "gulp imagenes",
     "convertirWebp": "gulp convertirWebp",
     "convertitAvif": "gulp convertitAvif"
   },
