@@ -3,8 +3,27 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 function iniciarApp() {
+    fijarNavegacion();
     crearGaleria();
     scrollNav();
+}
+
+function fijarNavegacion(){
+    const body = document.querySelector('body');
+    const header = document.querySelector('.header');
+    const video = document.querySelector('.video');
+
+    window.addEventListener('scroll', function(){
+        if(video.getBoundingClientRect().top < 0) {
+            header.classList.add('fijo');
+            body.classList.add('body-scroll');
+            
+        }else {
+            header.classList.remove('fijo');
+            body.classList.remove('body-scroll');
+            
+        }
+    });
 }
 
 function scrollNav() {
