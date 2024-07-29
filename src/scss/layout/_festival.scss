@@ -1,9 +1,8 @@
 @use 'base/variables' as v;
 @use 'base/mixins' as m;
 
-
 .sobre-festival {
-    padding: 5rem 0;
+    @include m.contenedor;
 
     @include m.tablet {
         @include m.grid(2, 5rem);
@@ -11,23 +10,12 @@
 }
 
 .contenido-festival {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     margin-top: 5rem;
-    @include m.tablet {
-        margin-top: 0;
-    }
-
     h2 {
         margin-bottom: 2rem;
     }
-
     .fecha {
+        color: v.$verde;
         font-weight: 700;
-        color: v.$rosa;
-    }
-    p {
-        text-align: justify;
-    }
+    } 
 }

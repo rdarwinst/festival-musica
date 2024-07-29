@@ -4,25 +4,6 @@
 .header {
     background-color: v.$verde;
 
-    @include m.tablet {
-        &.fijo {
-            top: 0;
-            left: 0;
-            position: fixed;
-            width: 100%;
-            box-shadow: .1rem .2rem 1rem lighten(v.$negro, 20%);
-        }
-    }
-
-    h1 {
-        color: v.$blanco;
-        text-align: center;
-
-        @include m.tablet {
-            margin: 0;
-        }
-    }
-
     .contenido-header {
         padding: 2rem;
 
@@ -31,29 +12,37 @@
             justify-content: space-between;
             align-items: center;
         }
+
+    }
+
+    h1 {
+        color: v.$blanco;
+        text-align: center;
+        @include m.tablet {
+            margin: 0;
+            text-align: left;
+        }
     }
 }
 
 .navegacion-principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
     @include m.tablet {
-        display: flex;
-        gap: 2rem;
+        flex-direction: row;
     }
 
     a {
-        display: block;
-        text-align: center;
         color: v.$blanco;
         font-size: 2.4rem;
-        margin-bottom: 1rem;
         transition: color .3s ease;
-
-        @include m.tablet {
-            margin: 0;
-        }
 
         &:hover {
             color: v.$amarillo;
         }
     }
+
+
 }
