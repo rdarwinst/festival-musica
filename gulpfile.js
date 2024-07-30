@@ -28,5 +28,6 @@ export function js(done) {
 
 export function dev() {
     watch(paths.sass, css);
+    watch(paths.js, js);
 }
 export default series(js, css, dev);

@@ -4,6 +4,19 @@
 .header {
     background-color: v.$verde;
 
+    @include m.tablet {
+        &.fixed {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+
+            box-shadow: .1rem .2rem .3rem #333;
+        }
+    }
+
+
+
     .contenido-header {
         padding: 2rem;
 
@@ -18,6 +31,7 @@
     h1 {
         color: v.$blanco;
         text-align: center;
+
         @include m.tablet {
             margin: 0;
             text-align: left;
@@ -30,6 +44,7 @@
     flex-direction: column;
     align-items: center;
     gap: 2rem;
+
     @include m.tablet {
         flex-direction: row;
     }
@@ -39,7 +54,7 @@
         font-size: 2.4rem;
         transition: color .3s ease;
 
-        &:hover {
+        &:hover, &.active {
             color: v.$amarillo;
         }
     }
